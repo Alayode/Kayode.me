@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Understanding clearfix in CSS</title>
+    <style>
+        #wrapper{
+            padding: 10px;
+            background: #aaa;
+        }
+        #main {
+            float: left ;
+            width: 60% ;
+            height: 200px;
+            background: #5ce;
+
+
+        }
+        #side {
+           float : right;
+           width :  36%;
+           height : 200px;
+           background: #5ce;
+         }
+        .clear {
+            clear: both;
+            height : 60px;
+            background: #e58;
+
+        }
+        h2{font-family: arial, sans-serif;
+          color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id = "wrapper">
+    <div id="main"> <h2>#main</h2></div>
+    <div id="side"><h2>#side</h2></div>
+    <div class = "clear"><h2>.clear</h2></div>
+</div>

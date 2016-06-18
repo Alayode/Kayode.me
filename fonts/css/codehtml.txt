@@ -1,0 +1,21 @@
+  <pre class="language-javascript">
+                <code class="language-javascript">
+          function Bands(artist, number, title) {
+          //DEFAULTS
+          if(typeof(artist)==='undefined'){ console.log('define an artists'); return; }
+          if(typeof(number)==='undefined') number = 9999999999;
+
+          var artistNew = artist.replace(/ /g,'%20');
+          var artistTable = artist.replace(/ /g, '-');
+
+          $.ajax({
+          url: 'http://api.bandsintown.com/artists/'+artistNew+'/events.json',
+          type: 'GET',
+          dataType: 'jsonp',
+          data: {
+          app_id: 'VelvetHammerApp',
+          api_version: '2.0',
+          format: 'json'
+          }
+          }
+       </code></pre>
