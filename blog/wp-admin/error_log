@@ -1,0 +1,2 @@
+[19-Apr-2014 01:07:21 UTC] PHP Strict Standards:  call_user_func_array() expects parameter 1 to be a valid callback, non-static method Jetpack_Post_By_Email::module_toggle() should not be called statically in /home2/mizu/public_html/chrissamuel.me/blog/wp-includes/plugin.php on line 470
+[21-May-2015 18:12:45 UTC] WordPress database error Can't DROP 'slug'; check that column/key exists for query ALTER TABLE wp_terms DROP INDEX slug, ADD INDEX slug(slug(191)) made by wp_upgrade, pre_schema_upgrade

@@ -1,0 +1,99 @@
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+html, body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #ddd;
+  font-weight: 300; }
+
+.shichiyouhyou {
+  font-size: 20px;
+  width: 695px;
+  height:300px;
+  border: 5px solid #222;
+  border-radius: 5px;
+  background-color: #222;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+  margin:392px;
+}
+  .shichiyouhyou__left-box, .shichiyouhyou__right-box {
+    float: left;
+    border-radius: 5px; }
+  .shichiyouhyou__left-box {
+    width: 40%;
+    text-align: center;
+    background-color: #eee;
+    height:100%;
+  }
+
+    .shichiyouhyou__left-box #weekday {
+      padding: 12px;
+      color: #fff;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      background-color: #ed1d0f;
+      background: linear-gradient(to bottom, #f3483c, #8d1109); }
+    .shichiyouhyou__left-box #date {
+      font-size: 7em;
+      font-weight: bold;
+      padding: 10px; }
+  .shichiyouhyou__right-box {
+    width: 57%;
+    margin-left: 15px;
+    padding: 5px;
+    background-color: #fff;
+    height:100%; }
+    .shichiyouhyou__right-box .header {
+      padding: 20px 20px 8px;
+      text-align: center; }
+    .shichiyouhyou__right-box .cal-wrapper {
+      font-size: 13px;
+      font-weight: bold; }
+      .shichiyouhyou__right-box .cal-wrapper .days-of-week {
+        padding: 5px 0px;
+        color: #f3483c; }
+      .shichiyouhyou__right-box .cal-wrapper .days-of-week li {
+        width: 14.28571%;
+        float: left;
+        list-style: none;
+        text-align: center; }
+
+#prev:hover, #next:hover {
+  cursor: pointer; }
+
+#prev {
+  float: left; }
+
+#next {
+  float: right; }
+
+#cal-frame {
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  color: #888; }
+  #cal-frame tr td {
+    padding: 5px;
+    border-right: 2px dotted #eee; }
+    #cal-frame tr td:not(:first-child):last-child {
+      border: 0; }
+    #cal-frame tr td:hover {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer; }
+    #cal-frame tr td.today {
+      background-color: #999;
+      color: #fff; }
+    #cal-frame tr td.selected {
+      background-color: #f3483c;
+      color: #fff; }
