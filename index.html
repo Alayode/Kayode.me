@@ -27,10 +27,6 @@
 </head>
 
 <body>
-
-
-
-
  <div id="wrapper">
     <div id="header">
         <div class="btn-responsive-menu"><span class="span-bar"></span><span class="span-bar"></span><span class="span-bar"></span></div>
@@ -57,7 +53,14 @@
                 <script></script>
                 <h3>Latest Jobs</h3>
                 <section class="filter-container">
-                    <input id="select-type-all" name="radio-set-1" type="radio" class="selector-type-all" checked="checked"/><label for="select-type-all" class="label-type-all">All</label><input id="select-type-1" name="radio-set-1" type="radio" class="selector-type-1"/><label for="select-type-1" class="label-type-1">2005 &nbsp;&nbsp;<i class="icon-hand-right red"></i>&nbsp;&nbsp;2008</label><input id="select-type-2" name="radio-set-1" type="radio" class="selector-type-2"/><label for="select-type-2" class="label-type-2">2008 &nbsp;&nbsp;<i class="icon-hand-right red"></i>&nbsp;&nbsp;2014</label><input id="select-type-3" name="radio-set-1" type="radio" class="selector-type-3"/><label for="select-type-3" class="label-type-3">2014 &nbsp;&nbsp;<i class="icon-hand-right red"></i>&nbsp;&nbsp;Now</label>
+                    <input id="select-type-all" name="radio-set-1" type="radio" class="selector-type-all" checked="checked"/>
+                    <label for="select-type-all" class="label-type-all">All</label>
+                    <input id="select-type-1" name="radio-set-1" type="radio" class="selector-type-1"/>
+                    <label for="select-type-1" class="label-type-1">2005 &nbsp;&nbsp;<i class="icon-hand-right red"></i>&nbsp;&nbsp;2008</label>
+                    <input id="select-type-2" name="radio-set-1" type="radio" class="selector-type-2"/>
+                    <label for="select-type-2" class="label-type-2">2008 &nbsp;&nbsp;<i class="icon-hand-right red"></i>&nbsp;&nbsp;2014</label>
+                    <input id="select-type-3" name="radio-set-1" type="radio" class="selector-type-3"/>
+                    <label for="select-type-3" class="label-type-3">2014 &nbsp;&nbsp;<i class="icon-hand-right red"></i>&nbsp;&nbsp;Now</label>
                     <ul class="items">
                         <li class="item-type-2">
                             <a href="pages/project-1.html">
@@ -101,6 +104,32 @@
                     </div>
                 </div>
             </div>
-            <script src="js/jquery.min_1_9.js"></script><script type="text/javascript" src="js/jquery.min.js"></script><script type="text/javascript" src="js/functions.js"></script><script src="lib/ios-orientationchange-fix.js"></script><script src="lib/jquery-2.0.3.min.js"></script><script src="lib/jquery.isotope.min.js"></script><script src="js/jquery.swipebox.js"></script><script type="text/javascript">jQuery(function($){/* Isotope */ var swipeboxInstance=$(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();var $container=$('#grid');var optionFilter=$('#filter'), optionFilterLinks=optionFilter.find('a');optionFilterLinks.attr('href', '#');onAnimationCompleted=function(){swipeboxInstance.refresh();};optionFilterLinks.click( function(){var selector=$(this).attr('data-filter');$container.isotope({filter : '.' + selector, itemSelector : '.item', layoutMode : 'fitRows', animationEngine : 'best-available',}, onAnimationCompleted);// Highlight the correct filter optionFilterLinks.removeClass('selected');$(this).addClass('selected');return false;});});</script> -->
-</body>
-</html>
+            <script src="js/jquery.min_1_9.js"></script>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/functions.js"></script>
+            <script src="lib/ios-orientationchange-fix.js"></script>
+            <script src="lib/jquery-2.0.3.min.js"></script>
+            <script src="lib/jquery.isotope.min.js"></script>
+            <script src="js/jquery.swipebox.js"></script>
+            <script type="text/javascript">
+              jQuery(function($){/* Isotope */ var swipeboxInstance=$(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();var $container=$('#grid');
+
+              var optionFilter=$('#filter'), optionFilterLinks=optionFilter.find('a');
+
+                  optionFilterLinks.attr('href', '#');
+                  onAnimationCompleted = function(){
+                    swipeboxInstance.refresh();
+              };
+                optionFilterLinks.click(function(){
+                  var selector=$(this).attr('data-filter');
+                  $container.isotope({filter : '.' + selector,
+                                      itemSelector : '.item',
+                                      layoutMode : 'fitRows',
+                                      animationEngine : 'best-available'
+                                      }, onAnimationCompleted );
+              // Highlight the correct filter
+              optionFilterLinks.removeClass('selected');$(this).addClass('selected');return false;});
+            });
+              </script>
+            </body>
+      </html>
