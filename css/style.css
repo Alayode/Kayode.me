@@ -69,7 +69,7 @@ h6 {
 
 /*** General ***/
 body {
-  color: #333;
+  color: #3b536c;
   font-size: 14px;
   line-height: normal;
   font-family: 'Open Sans', sans-serif;
@@ -82,7 +82,7 @@ body {
 
 a, a:link {
   text-decoration: none;
-  color: #ff001a;
+  color: #129ada;
   -webkit-transition: 0.3s all 0s;
   -moz-transition: 0.3s all 0s;
   -o-transition: 0.3s all 0s;
